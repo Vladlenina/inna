@@ -1,0 +1,55 @@
+.application {
+  background: url(../images/bg-form.png) no-repeat center;
+  min-height: 640px;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+  // .application__form
+  &__form {
+    display: grid;
+    align-content: flex-start;
+    max-width: 560px;
+    width: 100%;
+    min-height: 640px;
+    background: rgba(0, 0, 0, 0.3);
+backdrop-filter: blur(10px);
+    padding-left: 9.37%;
+    padding-top: 11.78%;
+    padding-right: 8.48%;
+  }
+
+  &__title {
+    margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #FFFFFF;
+  }
+
+  &__text {
+    margin-bottom: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFC700;
+  }
+
+  &__field {
+    margin-bottom: 45px;
+    border-bottom: 1px solid #FFFFFF;
+    &--last {
+      margin-bottom: 83px;
+    }
+  }
+
+
+  &__btn {
+
+    justify-self: flex-start;
+
+  }
+}

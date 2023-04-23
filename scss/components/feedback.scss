@@ -1,0 +1,73 @@
+.feedback {
+  padding-bottom: 150px;
+  // .feedback__header
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 90px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__item {
+    position: relative;
+    display: grid;
+    gap: 27px 28px;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+      'image title'
+      'image content';
+    padding-left: 45px;
+    padding-top: 38px;
+    padding-bottom: 39px;
+    padding-right: 27px;
+    background: #ededed;
+    border-radius: 10px;
+
+    background-image: url(../images/quote.png);
+    background-repeat: no-repeat;
+    background-position: 98% 102%;
+
+    // &::after {
+    //   position: absolute;
+    //   right: 47px;
+    //   bottom: -322px;
+    //   content: '”';
+    //   font-family: 'Marko One';
+    //   font-size: 500px;
+    //   line-height: 1;
+    //   color: #ffc700;
+    //   opacity: 0.4;
+    //   transform: rotate(16.66deg);
+    // }
+  }
+
+  &__image {
+    grid-area: image;
+  }
+
+  &__item-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #282828;
+    grid-area: title;
+  }
+
+  &__item-text {
+    margin: 0;
+    grid-area: content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #282828;
+    z-index: 1;
+  }
+}

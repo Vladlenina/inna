@@ -1,0 +1,61 @@
+.types-excursions {
+  padding-bottom: 90px;
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__list {
+    margin-bottom: 60px;
+  }
+}
+
+.excursions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 20px;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #282828;
+  }
+
+  &__item {
+    padding-left: 95px;
+    &:nth-child(1) {
+      background: url(../images/icon_bus.svg) no-repeat left top;
+    }
+    &:nth-child(2) {
+      background: url(../images/icon_yacht.svg) no-repeat left top;
+    }
+    &:nth-child(3) {
+      background: url(../images/icon_jeep.svg) no-repeat left top;
+    }
+    &:nth-child(4) {
+      background: url(../images/icon_canyoning.svg) no-repeat left top;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #0499DD;
+    }
+    &-info {
+      margin: 0;
+      margin-top: 10px;
+      font-weight: 500;
+      line-height: 17px;
+      color: #282828;
+    }
+  }
+
+  &__btn {
+    padding-right: 72px;
+    background: url(../images/arrow-right.svg) no-repeat 77% center, linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+  }
+}
